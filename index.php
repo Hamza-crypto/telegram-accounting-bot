@@ -14,15 +14,13 @@ curl_close($ch);
 
 $result = json_decode($result, true);
 
-if (isset($result['ok'])){
-    if (isset($result['result'])){
+if (isset($result['ok'])) {
+    if (isset($result['result'])) {
         echo "D0ne";
-    }
-    else{
+    } else {
         echo $result['description'];
     }
-}
-else{
+} else {
     echo "Something Went Wrong";
 }
 
