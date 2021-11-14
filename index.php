@@ -14,6 +14,7 @@ curl_close($ch);
 
 $result = json_encode($result, true);
 
+var_dump($result);
 if (isset($result['ok'])){
     if (isset($result['result'])){
         echo "D0ne";
