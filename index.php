@@ -12,9 +12,8 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
 $result = curl_exec($ch);
 curl_close($ch);
 
-$result = json_encode($result, true);
+$result = json_decode($result, true);
 
-var_dump($result);
 if (isset($result['ok'])){
     if (isset($result['result'])){
         echo "D0ne";
